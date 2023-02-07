@@ -1,0 +1,33 @@
+# folders and files
+de_zc2023/psql_vol/
+de_zc2023/input_data/
+
+# My default authenticate json is present here
+de_zc2023/secrets/  
+
+# Terraform
+de_zc2023/.terraform/
+de_zc2023/.terraform.lock.hcl
+de_zc2023/..git/
+
+# Prefect
+prefect-zoomcamp/data/
+prefect-zoomcamp/..git/
+
+# Data
+data/
+
+# Anaconda
+anaconda3/
+
+# VSCode
+.vscode-server/
+
+# Hidden files
+.cache/
+.conda/
+.config/
+.docker/
+.gc/
+.prefect/
+.ssh/

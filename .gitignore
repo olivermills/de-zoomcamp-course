@@ -9,13 +9,11 @@ de_zc2023/secrets/
 de_zc2023/.terraform/
 de_zc2023/.terraform.lock.hcl
 de_zc2023/..git/
+bin/
 
 # Prefect
 prefect-zoomcamp/data/
 prefect-zoomcamp/..git/
-
-# Data
-data/
 
 # Anaconda
 anaconda3/

@@ -361,3 +361,37 @@ git rm --cached prefect-zoomcamp
 git add -A
 git status
 git add -A
+conda activate zoomcamp
+git status
+git add -A
+git status
+sudo git add -A
+rm -f ./.git/index.lock
+sudo git add -A
+cd data/
+cd
+cd de_zc2023/psql_vol/
+de_zc2023/input_data/
+rm -f ./.git/index.lock
+find . -size +5000000c 2>/dev/null -exec ls -l {} \;
+sudo git add -A
+clear
+git status
+git rm -r --cached
+git status
+git rm -r --cached .
+git rm -r -f --cached .
+git status
+git add -A
+git status
+git rm -r -f --cached .
+git status
+git add -A
+git status
+git commit -m "first commit"
+git remote add origin https://github.com/olivermills/de-zoomcamp-course.git
+git push -u origin main
+git push -u origin master
+clear
+conda activate zoomcamp
+prefect orion start

@@ -395,3 +395,68 @@ git push -u origin master
 clear
 conda activate zoomcamp
 prefect orion start
+conda activate zoomcamp
+prefect deployment build prefect-zoomcamp/flows/02_gcp/etl_web_to_gcs.py:etl_web_to_gcs -sb github/github-zoomcamp -n github-flow --apply
+prefect agent start -q 'default'
+conda activate zoomcamp
+git add -A
+git status
+git commit -m "added github deploy files"
+git push origin master
+python prefect-zoomcamp/flows/03_deployments/github_deploy.py 
+prefect orion start
+conda activate zoomcamp
+sudo snap remove google-cloud-sdk
+conda activate zoomcamp
+prefect deployment build prefect-zoomcamp/flows/02_gcp/etl_web_to_gcs.py:etl_web_to_gcs -sb github/github-zoomcamp -n github-flow --apply
+prefect agent start -q 'default'
+conda activate zoomcamp
+cd
+ls
+prefect orion start
+conda activate zoomcamp
+prefect deployment build flows/02_gcp/etl_web_to_gcs.py:etl_web_to_gcs -sb github/github-zoomcamp -n github-flow --apply
+cd prefect-zoomcamp/
+prefect deployment build flows/02_gcp/etl_web_to_gcs.py:etl_web_to_gcs -sb github/github-zoomcamp -n github-flow --apply
+snap install google-cloud-sdk --classic
+sudo snap install google-cloud-sdk --classic
+ls
+cd
+ls
+cd prefect-zoomcamp/
+python flows/02_gcp/etl_web_to_gcs.py 
+prefect cloud login
+prefect cloud login -k pnu_ABZ7JqpeUyic2cg3MGUahF8pxEgzZ41bui4x
+python flows/02_gcp/etl_web_to_gcs.py 
+prefect block ls
+python flows/02_gcp/etl_web_to_gcs.py 
+prefect PREFECT_TASKS_REFRESH_CACHE=true
+PREFECT_TASKS_REFRESH_CACHE=true
+python flows/02_gcp/etl_web_to_gcs.py 
+cd
+conda activate zoomcamp
+python prefect-zoomcamp/flows/02_gcp/github_deploy.py 
+prefect agent --help
+prefect agent start --work-queue "default"
+conda activate zoomcamp
+prefect orion start
+prefect cloud login
+conda activate zoomcamp
+prefect cloud login
+prefect ls
+clear
+prefect cloud login
+prefect block ls
+python prefect-zoomcamp/flows/02_gcp/etl_web_to_gcs.py
+prefect profile ls
+python prefect-zoomcamp/flows/02_gcp/etl_web_to_gcs.py
+conda activate zoomcamp
+prefect orion start
+conda activate zoomcamp
+prefect orion start
+conda activate zoomcamp
+prefect cloud login
+python flows/02_gcp/etl_web_to_gcs.py
+conda activate zoomcamp
+cd
+pip list

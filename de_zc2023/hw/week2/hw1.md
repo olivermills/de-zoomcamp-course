@@ -67,3 +67,29 @@ $ prefect agent start -q 'default'
 ## Q4. Run your deployment in a local subprocess (the default if you don’t specify an infrastructure). Use the Green taxi data for the month of November 2020.
 
 How many rows were processed by the script?
+
+```
+from prefect.deployments import Deployment
+from etl_web_to_gcs import etl_web_to_gcs
+from prefect.filesystems import GitHub 
+
+storage = GitHub.load("github-zoomcamp")
+
+deployment = Deployment.build_from_flow(
+     flow=etl_web_to_gcs,
+     name="github-example",
+     storage=storage,
+     entrypoint="prefect-zoomcamp/flows/02_gcp/etl_web_to_gcs.py:etl_web_to_gcs")
+
+if __name__ == "__main__":
+    deployment.apply()
+```
+88605
+
+## Q5. Email or Slack notifications
+
+How many rows were processed by the script?
+514392
+
+## Q6. 
+8
